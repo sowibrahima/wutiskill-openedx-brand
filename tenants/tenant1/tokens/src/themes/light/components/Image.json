@@ -1,8 +1,20 @@
 {
+  "color": {
+    "$type": "color",
+    "image": {
+      "figure-caption": { "source": "$figure-caption-color", "$value": "{color.gray.500}" },
+      "thumbnail": {
+        "bg": { "source": "$thumbnail-bg", "$value": "{color.body.bg}" },
+        "border": { "source": "$thumbnail-border-color", "$value": "{color.gray.200}"
+        }
+      }
+    }
+  },
   "elevation": {
+    "$type": "shadow",
     "image": {
       "thumbnail": {
-        "box-shadow": { "$value": "none" }
+        "box-shadow": { "source": "$thumbnail-box-shadow", "$value": "none" }
       }
     }
   }

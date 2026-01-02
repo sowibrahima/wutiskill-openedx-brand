@@ -1,0 +1,15 @@
+{
+  "color": {
+    "alert": {
+      "actions": {
+        "overrides": {
+          "button": {
+            "variants": {
+              "primary": "brand"
+            }
+          }
+        }
+      }
+    }
+  }
+}

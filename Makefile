@@ -1,7 +1,6 @@
 .PHONY: build build-wutiskill build-tenant1 clean
 
 build: clean
-	mkdir -p dist/wutiskill dist/tenant1
 	npm run build
 
 build-wutiskill:

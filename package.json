@@ -1,20 +1,20 @@
 {
-  "name": "@wutiskill/lms-themes",
+  "name": "@wutiskill/branding",
   "version": "1.0.0",
-  "description": "Multi-tenant themes for WutiSkill LMS platform",
+  "description": "Multi-tenant branding for WutiSkill LMS platform",
   "author": "WutiSkill",
   "license": "UNLICENSED",
   "scripts": {
-    "build-tokens:wutiskill": "paragon build-tokens --source ./tenants/wutiskill/tokens/src --build-dir ./tenants/wutiskill/paragon/css --source-tokens-only",
-    "build-scss:wutiskill": "paragon build-scss --corePath ./tenants/wutiskill/paragon/core.scss --themesPath ./tenants/wutiskill/paragon/css/themes --outDir ./dist/wutiskill --defaultThemeVariants light",
+    "build-tokens:wutiskill": "paragon build-tokens --source ./branding/wutiskill/tokens/src --build-dir ./branding/wutiskill/paragon/css --source-tokens-only",
+    "build-scss:wutiskill": "paragon build-scss --corePath ./branding/wutiskill/paragon/core.scss --themesPath ./branding/wutiskill/paragon/css/themes --outDir ./dist/wutiskill --defaultThemeVariants light",
     "build:wutiskill": "npm run build-tokens:wutiskill && npm run build-scss:wutiskill",
-    "build-tokens:tenant1": "paragon build-tokens --source ./tenants/tenant1/tokens/src --build-dir ./tenants/tenant1/paragon/css --source-tokens-only",
-    "build-scss:tenant1": "paragon build-scss --corePath ./tenants/tenant1/paragon/core.scss --themesPath ./tenants/tenant1/paragon/css/themes --outDir ./dist/tenant1 --defaultThemeVariants light",
+    "build-tokens:tenant1": "paragon build-tokens --source ./branding/tenant1/tokens/src --build-dir ./branding/tenant1/paragon/css --source-tokens-only",
+    "build-scss:tenant1": "paragon build-scss --corePath ./branding/tenant1/paragon/core.scss --themesPath ./branding/tenant1/paragon/css/themes --outDir ./dist/tenant1 --defaultThemeVariants light",
     "build:tenant1": "npm run build-tokens:tenant1 && npm run build-scss:tenant1",
-    "build": "npm run build:wutiskill && npm run build:tenant1",
+    "build": "node ./scripts/build-all.js",
     "paragon:help": "paragon help"
   },
   "devDependencies": {
-    "@openedx/paragon": "^23.14.0"
+    "@openedx/paragon": "^23.18.2"
   }
 }

@@ -1,0 +1,561 @@
+{
+  "$type": "color",
+  "color": {
+    "blue": { "$value": "#00688D" },
+    "red": { "$value": "#AB0D02" },
+    "green": { "$value": "#0D7D4D" },
+    "yellow": { "$value": "#D6B600" },
+    "white": { "$value": "#FFFFFF" },
+    "black": { "$value": "000000" },
+    "gray": {
+      "base": {
+        "$value": "#707070",
+        "source": "$gray",
+        "$description": "Basic gray color."
+      },
+      "100": {
+        "$value": "#EBEBEB",
+        "source": "$gray-100",
+        "$description": "Gray color of level 100."
+      },
+      "200": {
+        "$value": "#CCCCCC",
+        "source": "$gray-200",
+        "$description": "Gray color of level 200."
+      },
+      "300": {
+        "$value": "#ADADAD",
+        "source": "$gray-300",
+        "$description": "Gray color of level 300."
+      },
+      "400": {
+        "$value": "#8F8F8F",
+        "source": "$gray-400",
+        "$description": "Gray color of level 400."
+      },
+      "500": {
+        "$value": "{color.gray.base}",
+        "source": "$gray-500",
+        "$description": "Gray color of level 500."
+      },
+      "600": {
+        "$value": "#5C5C5C",
+        "source": "$gray-600",
+        "$description": "Gray color of level 600."
+      },
+      "700": {
+        "$value": "#454545",
+        "source": "$gray-700",
+        "$description": "Gray color of level 700."
+      },
+      "800": {
+        "$value": "#333333",
+        "source": "$gray-800",
+        "$description": "Gray color of level 800."
+      },
+      "900": {
+        "$value": "#212529",
+        "source": "$gray-900",
+        "$description": "Gray color of level 900."
+      }
+    },
+    "accent": {
+      "a": {
+        "$value": "#5DE3BF",
+        "source": "$accent-a",
+        "$description": "Accent-a color."
+      },
+      "b": {
+        "$value": "#EBA7BC",
+        "source": "$accent-b",
+        "$description": "Accent-b color."
+      }
+    },
+    "primary": {
+      "base": {
+        "$value": "#00262B",
+        "source": "$primary",
+        "$description": "Basic primary color."
+      },
+      "100": {
+        "$value": "#F0F2F2",
+        "source": "$primary-100",
+        "$description": "Primary color of level 100.",
+        "modify": null
+      },
+      "200": {
+        "$value": "#BFC9CA",
+        "source": "$primary-200",
+        "$description": "Primary color of level 200.",
+        "modify": null
+      },
+      "300": {
+        "$value": "#2D494E",
+        "source": "$primary-300",
+        "$description": "Primary color of level 300.",
+        "modify": null
+      },
+      "400": {
+        "$value": "#0E3639",
+        "source": "$primary-400",
+        "$description": "Primary color of level 400.",
+        "modify": null
+      },
+      "500": {
+        "$value": "{color.primary.base}",
+        "source": "$primary-500",
+        "$description": "Primary color of level 500.",
+        "modify": null
+      },
+      "600": {
+        "$value": "#002326",
+        "source": "$primary-600",
+        "$description": "Primary color of level 600.",
+        "modify": null
+      },
+      "700": {
+        "$value": "#002121",
+        "source": "$primary-700",
+        "$description": "Primary color of level 700.",
+        "modify": null
+      },
+      "800": {
+        "$value": "#001D20",
+        "source": "$primary-800",
+        "$description": "Primary color of level 800.",
+        "modify": null
+      },
+      "900": {
+        "$value": "#001B1E",
+        "source": "$primary-900",
+        "$description": "Primary color of level 900.",
+        "modify": null
+      }
+    },
+    "brand": {
+      "base": {
+        "$value": "#D74000",
+        "source": "$brand",
+        "$description": "Basic brand color."
+      },
+      "100": {
+        "$value": "#F49974",
+        "source": "$brand-100",
+        "$description": "Brand color of level 100.",
+        "modify": null
+      },
+      "200": {
+        "$value": "#EE855A",
+        "source": "$brand-200",
+        "$description": "Brand color of level 200.",
+        "modify": null
+      },
+      "300": {
+        "$value": "#E76F3F",
+        "source": "$brand-300",
+        "$description": "Brand color of level 300.",
+        "modify": null
+      },
+      "400": {
+        "$value": "#DF5924",
+        "source": "$brand-400",
+        "$description": "Brand color of level 400.",
+        "modify": null
+      },
+      "500": {
+        "$value": "{color.brand.base}",
+        "source": "$brand-500",
+        "$description": "Brand color of level 500."
+      },
+      "600": {
+        "$value": "#BC3A05",
+        "source": "$brand-600",
+        "$description": "Brand color of level 600.",
+        "modify": null
+      },
+      "700": {
+        "$value": "#A33508",
+        "source": "$brand-700",
+        "$description": "Brand color of level 700.",
+        "modify": null
+      },
+      "800": {
+        "$value": "#8B2F0B",
+        "source": "$brand-800",
+        "$description": "Brand color of level 800.",
+        "modify": null
+      },
+      "900": {
+        "$value": "#73290C",
+        "source": "$brand-900",
+        "$description": "Brand color of level 900.",
+        "modify": null
+      }
+    },
+    "success": {
+      "base": {
+        "$value": "#0D7D4D",
+        "source": "$success",
+        "$description": "Basic success color."
+      },
+      "100": {
+        "$value": "#F2FAF7",
+        "source": "$success-100",
+        "$description": "Success color of level 100.",
+        "modify": null
+      },
+      "200": {
+        "$value": "#BBE6D7",
+        "source": "$success-200",
+        "$description": "Success color of level 200.",
+        "modify": null
+      },
+      "300": {
+        "$value": "#30A171",
+        "source": "$success-300",
+        "$description": "Success color of level 300.",
+        "modify": null
+      },
+      "400": {
+        "$value": "#4A9E7A",
+        "source": "$success-400",
+        "$description": "Success color of level 400.",
+        "modify": null
+      },
+      "500": {
+        "$value": "{color.success.base}",
+        "source": "$success-500",
+        "$description": "Success color of level 500.",
+        "modify": null
+      },
+      "600": {
+        "$value": "#0C7145",
+        "source": "$success-600",
+        "$description": "Success color of level 600.",
+        "modify": null
+      },
+      "700": {
+        "$value": "#175B3C",
+        "source": "$success-700",
+        "$description": "Success color of level 700.",
+        "modify": null
+      },
+      "800": {
+        "$value": "#0A5E3A",
+        "source": "$success-800",
+        "$description": "Success color of level 800.",
+        "modify": null
+      },
+      "900": {
+        "$value": "#0F4D0F",
+        "source": "$success-900",
+        "$description": "Success color of level 900.",
+        "modify": null
+      }
+    },
+    "info": {
+      "base": {
+        "$value": "#00688D",
+        "source": "$info",
+        "$description": "Basic info color."
+      },
+      "100": {
+        "$value": "#EFF8FA",
+        "source": "$info-100",
+        "$description": "Info color of level 100.",
+        "modify": null
+      },
+      "200": {
+        "$value": "#9CD2E6",
+        "source": "$info-200",
+        "$description": "Info color of level 200.",
+        "modify": null
+      },
+      "300": {
+        "$value": "#1C8DBE",
+        "source": "$info-300",
+        "$description": "Info color of level 300.",
+        "modify": null
+      },
+      "400": {
+        "$value": "#408EAA",
+        "source": "$info-400",
+        "$description": "Info color of level 400.",
+        "modify": null
+      },
+      "500": {
+        "$value": "{color.info.base}",
+        "source": "$info-500",
+        "$description": "Info color of level 500."
+      },
+      "600": {
+        "$value": "#005E7F",
+        "source": "$info-600",
+        "$description": "Info color of level 600.",
+        "modify": null
+      },
+      "700": {
+        "$value": "#004972",
+        "source": "$info-700",
+        "$description": "Info color of level 700.",
+        "modify": null
+      },
+      "800": {
+        "$value": "#004E6A",
+        "source": "$info-800",
+        "$description": "Info color of level 800.",
+        "modify": null
+      },
+      "900": {
+        "$value": "#002F4A",
+        "source": "$info-900",
+        "$description": "Info color of level 900.",
+        "modify": null
+      }
+    },
+    "warning": {
+      "base": {
+        "$value": "#D6B600",
+        "source": "$warning",
+        "$description": "Basic warning color."
+      },
+      "100": {
+        "$value": "#FFFADB",
+        "source": "$warning-100",
+        "$description": "Warning color of level 100.",
+        "modify": null
+      },
+      "200": {
+        "$value": "#FFEA75",
+        "source": "$warning-200",
+        "$description": "Warning color of level 200.",
+        "modify": null
+      },
+      "300": {
+        "$value": "#F0CC00",
+        "source": "$warning-300",
+        "$description": "Warning color of level 300.",
+        "modify": null
+      },
+      "400": {
+        "$value": "#E0C840",
+        "source": "$warning-400",
+        "$description": "Warning color of level 400.",
+        "modify": null
+      },
+      "500": {
+        "$value": "{color.warning.base}",
+        "source": "$warning-500",
+        "$description": "Warning color of level 500.",
+        "modify": null
+      },
+      "600": {
+        "$value": "#C1A400",
+        "source": "$warning-600",
+        "$description": "Warning color of level 600.",
+        "modify": null
+      },
+      "700": {
+        "$value": "#998200",
+        "source": "$warning-700",
+        "$description": "Warning color of level 700.",
+        "modify": null
+      },
+      "800": {
+        "$value": "#A18900",
+        "source": "$warning-800",
+        "$description": "Warning color of level 800.",
+        "modify": null
+      },
+      "900": {
+        "$value": "#7A6800",
+        "source": "$warning-900",
+        "$description": "Warning color of level 900.",
+        "modify": null
+      }
+    },
+    "danger": {
+      "base": {
+        "$value": "#AB0D02",
+        "source": "$danger",
+        "$description": "Basic danger color."
+      },
+      "100": {
+        "$value": "#FCF1F4",
+        "source": "$danger-100",
+        "$description": "Danger color of level 100.",
+        "modify": null
+      },
+      "200": {
+        "$value": "#F3AEA9",
+        "source": "$danger-200",
+        "$description": "Danger color of level 200.",
+        "modify": null
+      },
+      "300": {
+        "$value": "#CA3A2F",
+        "source": "$danger-300",
+        "$description": "Danger color of level 300.",
+        "modify": null
+      },
+      "400": {
+        "$value": "#C04A41",
+        "source": "$danger-400",
+        "$description": "Danger color of level 400.",
+        "modify": null
+      },
+      "500": {
+        "$value": "{color.danger.base}",
+        "source": "$danger-500",
+        "$description": "Danger color of level 500.",
+        "modify": null
+      },
+      "600": {
+        "$value": "#9A0C02",
+        "source": "$danger-600",
+        "$description": "Danger color of level 600.",
+        "modify": null
+      },
+      "700": {
+        "$value": "#951C13",
+        "source": "$danger-700",
+        "$description": "Danger color of level 700.",
+        "modify": null
+      },
+      "800": {
+        "$value": "#800A02",
+        "source": "$danger-800",
+        "$description": "Danger color of level 800.",
+        "modify": null
+      },
+      "900": {
+        "$value": "#690E07",
+        "source": "$danger-900",
+        "$description": "Danger color of level 900.",
+        "modify": null
+      }
+    },
+    "light": {
+      "base": {
+        "$value": "#E1DDD2",
+        "source": "$light",
+        "$description": "Basic light color."
+      },
+      "100": {
+        "$value": "#F9F8F6",
+        "source": "$light-100",
+        "$description": "Light color of level 100.",
+        "modify": null
+      },
+      "200": {
+        "$value": "#F3F1ED",
+        "source": "$light-200",
+        "$description": "Light color of level 200.",
+        "modify": null
+      },
+      "300": {
+        "$value": "#EDEBE4",
+        "source": "$light-300",
+        "$description": "Light color of level 300.",
+        "modify": null
+      },
+      "400": {
+        "$value": "#E7E4DB",
+        "source": "$light-400",
+        "$description": "Light color of level 400.",
+        "modify": null
+      },
+      "500": {
+        "$value": "{color.light.base}",
+        "source": "$light-500",
+        "$description": "Light color of level 500.",
+        "modify": null
+      },
+      "600": {
+        "$value": "#B4B1A8",
+        "source": "$light-600",
+        "$description": "Light color of level 600.",
+        "modify": null
+      },
+      "700": {
+        "$value": "#87857E",
+        "source": "$light-700",
+        "$description": "Light color of level 700.",
+        "modify": null
+      },
+      "800": {
+        "$value": "#5A5854",
+        "source": "$light-800",
+        "$description": "Light color of level 800.",
+        "modify": null
+      },
+      "900": {
+        "$value": "#2D2C2A",
+        "source": "$light-900",
+        "$description": "Light color of level 900.",
+        "modify": null
+      }
+    },
+    "dark": {
+      "base": {
+        "$value": "#1F453D",
+        "source": "$dark",
+        "$description": "Basic dark color."
+      },
+      "100": {
+        "$value": "#D2DAD8",
+        "source": "$dark-100",
+        "$description": "Dark color of level 100.",
+        "modify": null
+      },
+      "200": {
+        "$value": "#BFC9CA",
+        "source": "$dark-200",
+        "$description": "Dark color of level 200.",
+        "modify": null
+      },
+      "300": {
+        "$value": "#798F8B",
+        "source": "$dark-300",
+        "$description": "Dark color of level 300.",
+        "modify": null
+      },
+      "400": {
+        "$value": "#4C6A64",
+        "source": "$dark-400",
+        "$description": "Dark color of level 400.",
+        "modify": null
+      },
+      "500": {
+        "$value": "{color.dark.base}",
+        "source": "$dark-500",
+        "$description": "Dark color of level 500.",
+        "modify": null
+      },
+      "600": {
+        "$value": "#193731",
+        "source": "$dark-600",
+        "$description": "Dark color of level 600.",
+        "modify": null
+      },
+      "700": {
+        "$value": "#132925",
+        "source": "$dark-700",
+        "$description": "Info color of level 700.",
+        "modify": null
+      },
+      "800": {
+        "$value": "#0C1C18",
+        "source": "$dark-800",
+        "$description": "Dark color of level 800.",
+        "modify": null
+      },
+      "900": {
+        "$value": "#060E0C",
+        "source": "$dark-900",
+        "$description": "Dark color of level 900.",
+        "modify": null
+      }
+    }
+  }
+}

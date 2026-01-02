@@ -1,0 +1,59 @@
+{
+  "color": {
+    "btn": {
+      "active": {
+        "text": {
+          "tertiary": {
+            "$value": "{color.primary.500}",
+            "$type": "color",
+            "source": "$btn-tertiary-active-color"
+          }
+        },
+        "bg": {
+          "tertiary": { 
+            "$value": "{color.white}",
+            "$type": "color",
+            "source": "$btn-tertiary-active-bg"
+          }
+        },
+        "border": {
+          "tertiary": {
+            "$value": "{color.primary.500}",
+            "$type": "color",
+            "source": "$btn-tertiary-active-border-color"
+          }
+        }
+      },
+      "focus": {
+        "text": {
+          "tertiary": { 
+            "$value": "{color.primary.500}",
+            "$type": "color",
+            "source": "$btn-tertiary-focus-color"
+          }
+        },
+        "bg": {
+          "tertiary": { 
+            "$value": "{color.white}",
+            "$type": "color",
+            "source": "$btn-tertiary-focus-bg" 
+          }
+        },
+        "border": {
+          "tertiary": { 
+            "$value": "{color.primary.500}",
+            "$type": "color",
+            "source": "$btn-tertiary-focus-border-color"
+          }
+        },
+        "outline": {
+          "tertiary": {
+            "$value": "transparent",
+            "$type": "color",
+            "source": "$btn-tertiary-focus-outline-color"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "size": {
+    "dropdown": {
+      "border": {
+        "width": { "$value": "0" }
+      }
+    }
+  },
+  "spacing": {
+    "dropdown": {
+      "padding": {
+        "y": {
+          "base": { "$value": "{spacing.spacer.2}" },
+          "item": { "$value": "{spacing.spacer.2,5}" }
+        }
+      }
+    }
+  }
+}

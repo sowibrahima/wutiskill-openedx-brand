@@ -1,0 +1,231 @@
+{
+  "color": {
+    "btn": {
+      "text": {
+        "info": {
+          "$value": "{color.btn.bg.info}",
+          "$type": "color",
+          "source": "$btn-info-color",
+          "modify": [
+            {
+              "type": "color-yiq"
+            }
+          ]
+        },
+        "outline-info": {
+          "$value": "{color.btn.bg.info}",
+          "$type": "color",
+          "source": "$btn-info-outline-color"
+        }
+      },
+      "bg": {
+        "info": {
+          "$value": "{color.info.600}",
+          "$type": "color",
+          "source": "$btn-info-bg"
+        },
+        "outline-info": {
+          "$value": "{color.white}",
+          "$type": "color",
+          "source": "$btn-info-outline-bg"
+        }
+      },
+      "border": {
+        "info": {
+          "$value": "{color.btn.bg.info}",
+          "$type": "color",
+          "source": "$btn-info-border-color"
+        },
+        "outline-info": {
+          "$value": "{color.btn.bg.info}",
+          "$type": "color",
+          "source": "$btn-info-outline-border-color"
+        }
+      },
+      "hover": {
+        "text": {
+          "info": {
+            "$value": "{color.btn.hover.bg.info}",
+            "$type": "color",
+            "source": "$btn-info-hover-color",
+            "modify": [
+              {
+                "type": "color-yiq"
+              }
+            ]
+          },
+          "outline-info": {
+            "$value": "{color.info.600}",
+            "$type": "color",
+            "source": "$btn-info-outline-hover-color",
+            "modify": [
+              {
+                "type": "color-yiq"
+              }
+            ]
+          }
+        },
+        "bg": {
+          "info": {
+            "$value": "{color.theme.hover.info}",
+            "$type": "color",
+            "source": "$btn-info-hover-bg"
+          },
+          "outline-info": {
+            "$value": "{color.info.600}",
+            "$type": "color",
+            "source": "$btn-info-outline-hover-bg"
+          }
+        },
+        "border": {
+          "info": {
+            "$value": "{color.btn.hover.bg.info}",
+            "$type": "color",
+            "source": "$btn-info-hover-border-color"
+          },
+          "outline-info": {
+            "$value": "{color.btn.hover.bg.outline-info}",
+            "$type": "color",
+            "source": "$btn-info-outline-hover-border-color"
+          }
+        }
+      },
+      "active": {
+        "text": {
+          "info": {
+            "$value": "{color.btn.active.bg.info}",
+            "$type": "color",
+            "source": "$btn-info-active-color",
+            "modify": [
+              {
+                "type": "color-yiq"
+              }
+            ]
+          },
+          "outline-info": {
+            "$value": "{color.btn.active.bg.outline-info}",
+            "$type": "color",
+            "source": "$btn-info-outline-active-color",
+            "modify": [
+              {
+                "type": "color-yiq"
+              }
+            ]
+          }
+        },
+        "bg": {
+          "info": {
+            "$value": "{color.theme.active.info}",
+            "$type": "color",
+            "source": "$btn-info-active-bg"
+          },
+          "outline-info": {
+            "$value": "{color.btn.bg.info}",
+            "$type": "color",
+            "source": "$btn-info-outline-active-bg"
+          }
+        },
+        "border": {
+          "info": {
+            "$value": "{color.theme.active.info}",
+            "$type": "color",
+            "source": "$btn-info-active-border-color"
+          },
+          "outline-info": {
+            "$value": "{color.btn.bg.info}",
+            "$type": "color",
+            "source": "$btn-info-outline-active-border-color"
+          }
+        }
+      },
+      "focus": {
+        "text": {
+          "info": {
+            "$value": "{color.btn.text.info}",
+            "$type": "color",
+            "source": "$btn-info-focus-color"
+          },
+          "outline-info": {
+            "$value": "{color.btn.text.outline-info}",
+            "$type": "color",
+            "source": "$btn-info-outline-focus-color"
+          }
+        },
+        "border": {
+          "info": {
+            "$value": "{color.btn.border.info}",
+            "$type": "color",
+            "source": "$btn-info-focus-border-color"
+          },
+          "outline-info": {
+            "$value": "{color.btn.border.outline-info}",
+            "$type": "color",
+            "source": "$btn-info-outline-focus-border-color"
+          }
+        },
+        "outline": {
+          "info": {
+            "$value": "{color.btn.border.info}",
+            "$type": "color",
+            "source": "$btn-info-focus-focus-outline-color"
+          },
+          "outline-info": {
+            "$value": "{color.btn.border.outline-info}",
+            "$type": "color",
+            "source": "$btn-info-outline-focus-outline-color"
+          }
+        },
+        "bg": {
+          "info": {
+            "$value": "{color.btn.bg.info}",
+            "$type": "color",
+            "source": "$btn-info-focus-bg"
+          },
+          "outline-info": {
+            "$value": "{color.btn.bg.outline-info}",
+            "$type": "color",
+            "source": "$btn-info-outline-focus-bg"
+          }
+        }
+      },
+      "disabled": {
+        "text": {
+          "info": {
+            "$value": "{color.btn.text.info}",
+            "$type": "color",
+            "source": "$btn-info-disabled-color"
+          },
+          "outline-info": {
+            "$value": "{color.btn.hover.text.outline-info}",
+            "$type": "color",
+            "source": "$btn-info-outline-disabled-color"
+          }
+        },
+        "bg": {
+          "info": {
+            "$value": "{color.btn.bg.info}",
+            "$type": "color",
+            "source": "$btn-info-disabled-bg"
+          },
+          "outline-info": {
+            "$value": "{color.btn.bg.outline-info}",
+            "$type": "color",
+            "source": "$btn-info-outline-disabled-bg"
+          }
+        },
+        "border": {
+          "info": {
+            "$value": "{color.btn.border.info}",
+            "$type": "color",
+            "source": "$btn-info-disabled-border-color"
+          },
+          "outline-info": {
+            "$value": "{color.btn.border.outline-info}",
+            "$type": "color",
+            "source": "$btn-info-outline-disabled-border-color"
+          }
+        }
+      }
+    }
+  }
+}

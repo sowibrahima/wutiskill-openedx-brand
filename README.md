@@ -1,23 +1,19 @@
-# WutiSkill LMS Themes
+# WutiSkill MFE Branding
 
-Multi-tenant theming solution for Open edX LMS platform.
+Multi-tenant branding solution for Open edX LMS platform.
 
 ## Structure
 
 ```
 wutiskill-lms-themes/
-├── tenants/
+├── branding/
 │   ├── wutiskill/              # WutiSkill tenant theme
 │   │   ├── tokens/src/         # Design tokens (colors, etc.)
-│   │   ├── paragon/            # SCSS and generated CSS
-│   │   └── comprehensive/      # HTML template overrides
-│   │       └── lms/
-│   │           └── templates/
+│   │   └── paragon/            # SCSS and generated CSS
 │   │
 │   └── tenant1/                # Second tenant theme
 │       ├── tokens/src/
-│       ├── paragon/
-│       └── comprehensive/
+│       └── paragon/
 │
 └── dist/                       # Built CSS output
     ├── wutiskill/
@@ -62,19 +58,6 @@ Upload `dist/<tenant>/` to your CDN and configure via `MFE_CONFIG`:
       "core": { "url": "https://cdn.example.com/<tenant>/core.css" },
       "defaults": { "light": "https://cdn.example.com/<tenant>/light.css" }
     }
-  }
-}
-```
-
-### Comprehensive Theme (LMS)
-
-Copy `tenants/<tenant>/comprehensive/` to `/openedx/themes/<tenant>/` in your Open edX instance.
-
-Configure via eox-tenant:
-```json
-{
-  "lms_configs": {
-    "THEME_NAME": "<tenant>"
   }
 }
 ```

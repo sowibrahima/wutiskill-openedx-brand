@@ -1,0 +1,38 @@
+{
+  "spacing": {
+    "btn": {
+      "focus": {
+        "gap": { "$value": "2px" }
+      }
+    }
+  },
+  "typography": {
+    "btn": {
+      "font": {
+        "weight": { "$value": "500" }
+      }
+    }
+  },
+  "size": {
+    "btn": {
+      "border": {
+        "radius": {
+          "base": { "$value": "100px", "$type": "dimension", "source": "$btn-border-radius" },
+          "lg": { "$value": "100px", "$type": "dimension", "source": "$btn-border-radius-lg" },
+          "sm": { "$value": "100px", "$type": "dimension", "source": "$btn-border-radius-sm" }
+        }
+      },
+      "focus": {
+        "border-radius": {
+          "base": {
+            "$value": "calc({size.btn.border.radius.base} + {spacing.btn.focus.border-gap})",
+            "$type": "dimension",
+            "source": "$btn-focus-border-radius"
+          },
+          "lg": { "$value": "{size.btn.focus.border-radius.base}", "$type": "dimension", "source": "$btn-focus-border-radius-lg" },
+          "sm": { "$value": "{size.btn.border.radius.base}", "$type": "dimension", "source": "$btn-focus-border-radius-sm" }
+        }
+      }
+    }
+  }
+}

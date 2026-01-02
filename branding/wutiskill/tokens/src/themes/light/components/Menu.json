@@ -1,0 +1,11 @@
+{
+  "color": {
+    "menu": {
+      "item": {
+        "focus": {
+          "bg": { "source": "$menu-item-focus-bg", "$value": "{color.light.500}" }
+        }
+      }
+    }
+  }
+}

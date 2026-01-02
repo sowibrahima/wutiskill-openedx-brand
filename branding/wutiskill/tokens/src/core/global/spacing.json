@@ -1,0 +1,63 @@
+{
+  "spacing": {
+    "$type": "dimension",
+    "spacer": {
+      "base": {
+        "$value": "1rem",
+        "source": "$spacer",
+        "$description": "Basic space value"
+      },
+      "0": {
+        "$value": "0",
+        "$description": "Space value of level 0"
+      },
+      "1": {
+        "$value": "calc({spacing.spacer.base} * .25)",
+        "$description": "Space value of level 1"
+      },
+      "1.5": {
+        "$value": "calc({spacing.spacer.base} * .375)",
+        "$description": "Space value of level 1.5"
+      },
+      "2": {
+        "$value": "calc({spacing.spacer.base} * .5)",
+        "$description": "Space value of level 2"
+      },
+      "2,5": {
+        "$value": "calc({spacing.spacer.base} * .75)",
+        "$description": "Space value of level 2.5"
+      },
+      "3": {
+        "$value": "{spacing.spacer.base}",
+        "$description": "Space value of level 3"
+      },
+      "3,5": {
+        "$value": "calc({spacing.spacer.base} * 1.25)",
+        "$description": "Space value of level 3.5"
+      },
+      "4": {
+        "$value": "calc({spacing.spacer.base} * 1.5)",
+        "$description": "Space value of level 4"
+      },
+      "4,5": {
+        "$value": "calc({spacing.spacer.base} * 2)",
+        "$description": "Space value of level 4.5"
+      },
+      "5": {
+        "$value": "calc({spacing.spacer.base} * 3)",
+        "$description": "Space value of level 5"
+      },
+      "5,5": {
+        "$value": "calc({spacing.spacer.base} * 4)",
+        "$description": "Space value of level 5.5"
+      },
+      "6": {
+        "$value": "calc({spacing.spacer.base} * 5)",
+        "$description": "Space value of level 6"
+      }
+    },
+    "grid": {
+      "gutter-width": { "$value": "{spacing.spacer.4}" }
+    }
+  }
+}

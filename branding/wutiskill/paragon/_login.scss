@@ -1,0 +1,77 @@
+// Authn login layout overrides
+// Uses Paragon design tokens (CSS variables) for spacing, radii, shadows, and colors.
+
+.layout {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--pgn-color-neutral-50) 0%,
+    var(--pgn-color-neutral-100) 40%,
+    var(--pgn-color-primary-50) 100%
+  );
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(360px, 520px);
+  gap: var(--pgn-spacing-6);
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+    padding: var(--pgn-spacing-4);
+  }
+}
+
+.banner__image {
+  border-radius: var(--pgn-border-radius-lg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--pgn-elevation-3);
+  min-height: 70vh;
+
+  @media (max-width: 991px) {
+    min-height: 260px;
+    order: -1;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pgn-spacing-6) var(--pgn-spacing-7);
+
+  @media (max-width: 767px) {
+    padding: var(--pgn-spacing-4);
+  }
+}
+
+// Card-like shell around the form content
+.content .mw-xs {
+  width: 100%;
+  max-width: 440px;
+  padding: var(--pgn-spacing-6);
+  border-radius: var(--pgn-border-radius-lg);
+  background: var(--pgn-color-white);
+  box-shadow: var(--pgn-elevation-3);
+  border: 1px solid var(--pgn-color-neutral-100);
+
+  @media (max-width: 767px) {
+    padding: var(--pgn-spacing-4);
+  }
+}
+
+// Form controls
+.content .form-control {
+  height: 3rem;
+  border-radius: var(--pgn-border-radius-md);
+}
+
+.content .login-button-width {
+  width: 100%;
+  height: 3rem;
+  border-radius: var(--pgn-border-radius-md);
+  box-shadow: var(--pgn-elevation-2);
+}
+
+// Footer link alignment on small screens
+.content .btn-link {
+  padding-left: 0;
+}

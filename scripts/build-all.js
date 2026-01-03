@@ -19,7 +19,7 @@ function run(command) {
 function buildBrand(brand) {
   const brandPath = path.join(brandingDir, brand);
   const tokensSrc = path.join(brandPath, 'tokens', 'src');
-  const cssBuildDir = path.join(brandPath, 'paragon', 'css');
+  const cssBuildDir = path.join(brandPath, 'paragon', 'build');
   const corePath = path.join(brandPath, 'paragon', 'core.scss');
   const themesPath = path.join(cssBuildDir, 'themes');
   const outDir = path.join(repoRoot, 'dist', brand);

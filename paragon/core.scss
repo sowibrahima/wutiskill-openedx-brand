@@ -1,0 +1,14 @@
+// Imported by `@edx/paragon` during the execution of its `build-scss` script. Includes 
+// CSS overrides from the brand design tokens and any other custom styles.
+
+@import './build/core/index.css';
+
+// Define custom styles here...
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import "./variables";
+@import "./overrides";

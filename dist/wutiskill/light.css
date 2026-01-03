@@ -105,7 +105,7 @@
   --pgn-color-primary-700: #002121FF;
   --pgn-color-primary-800: #001D20FF;
   --pgn-color-primary-900: #001B1EFF;
-  --pgn-color-primary-base: #00262BFF;
+  --pgn-color-primary-base: #590D22FF;
   --pgn-color-brand-100: #F49974FF;
   --pgn-color-brand-200: #EE855AFF;
   --pgn-color-brand-300: #E76F3FFF;
@@ -114,7 +114,7 @@
   --pgn-color-brand-700: #A33508FF;
   --pgn-color-brand-800: #8B2F0BFF;
   --pgn-color-brand-900: #73290CFF;
-  --pgn-color-brand-base: #D74000FF;
+  --pgn-color-brand-base: #FFBA08FF;
   --pgn-color-success-100: #F2FAF7FF;
   --pgn-color-success-200: #BBE6D7FF;
   --pgn-color-success-300: #30A171FF;
@@ -316,7 +316,7 @@
   --pgn-color-action-default-primary-700: #000000FF;
   --pgn-color-action-default-primary-800: #000000FF;
   --pgn-color-action-default-primary-900: #000000FF;
-  --pgn-color-action-default-primary-base: #000000FF;
+  --pgn-color-action-default-primary-base: #2C0611FF;
   --pgn-color-action-default-brand-100: #F07645FF;
   --pgn-color-action-default-brand-200: #E9632CFF;
   --pgn-color-action-default-brand-300: #D8511BFF;
@@ -325,7 +325,7 @@
   --pgn-color-action-default-brand-700: #722506FF;
   --pgn-color-action-default-brand-800: #5C1F07FF;
   --pgn-color-action-default-brand-900: #451907FF;
-  --pgn-color-action-default-brand-base: #A43100FF;
+  --pgn-color-action-default-brand-base: #D49900FF;
   --pgn-color-action-default-success-100: #CDECE0FF;
   --pgn-color-action-default-success-200: #96D8C1FF;
   --pgn-color-action-default-success-300: #247A55FF;
@@ -532,9 +532,9 @@
   --pgn-color-secondary-600: #3E3E3EFF;
   --pgn-color-secondary-900: #303030FF;
   --pgn-color-action-default-gray-500: #575757FF;
-  --pgn-color-action-default-primary-500: #000000FF;
+  --pgn-color-action-default-primary-500: #2C0611FF;
   --pgn-color-action-default-secondary-base: #2B2B2BFF;
-  --pgn-color-action-default-brand-500: #A43100FF;
+  --pgn-color-action-default-brand-500: #D49900FF;
   --pgn-color-action-default-success-500: #084F31FF;
   --pgn-color-action-default-info-500: #00425AFF;
   --pgn-color-action-default-warning-500: #A38B00FF;
@@ -544,9 +544,9 @@
   --pgn-other-content-form-feedback-icon-valid: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='2 2 20 20'%3e%3cpath fill='%230D7D4DFF' d='M12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 Z M17.5208153,8.03553391 L10.4497475,15.1066017 L6.91421356,11.5710678 L5.5,12.9852814 L10.4497475,17.9350288 L18.9350288,9.44974747 L17.5208153,8.03553391 Z'/%3e%3c/svg%3e");
   --pgn-other-content-form-feedback-icon-invalid: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23AB0D02FF' viewBox='2 2 20 20'%3e%3cpath d='M12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 Z M13.25,15.5 L10.75,15.5 C10.6119288,15.5 10.5,15.6119288 10.5,15.75 L10.5,15.75 L10.5,18.25 C10.5,18.3880712 10.6119288,18.5 10.75,18.5 L10.75,18.5 L13.25,18.5 C13.3880712,18.5 13.5,18.3880712 13.5,18.25 L13.5,18.25 L13.5,15.75 C13.5,15.6119288 13.3880712,15.5 13.25,15.5 L13.25,15.5 Z M13.492539,5.5 L10.5001113,5.50010806 C10.3620998,5.50416722 10.2535099,5.61933826 10.2575691,5.75734976 L10.2575691,5.75734976 L10.4928632,13.7573498 C10.4968382,13.8925005 10.607546,14 10.7427552,14 L10.7427552,14 L13.2572448,14 C13.392454,14 13.5031618,13.8925005 13.5071368,13.7573498 L13.5071368,13.7573498 L13.7424309,5.75734976 L13.7424309,5.75734976 C13.742539,5.61192881 13.6306101,5.5 13.492539,5.5 L13.492539,5.5 Z' /%3e%3c/svg%3E");
   --pgn-color-theme-active-secondary: var(--pgn-color-secondary-900); /** Theme-specific secondary active color. */
-  --pgn-color-btn-text-brand: #FFFFFFFF;
+  --pgn-color-btn-text-brand: #454545FF;
   --pgn-color-btn-text-outline-brand: var(--pgn-color-btn-bg-brand);
-  --pgn-color-btn-text-inverse-brand: #FFFFFFFF;
+  --pgn-color-btn-text-inverse-brand: #454545FF;
   --pgn-color-btn-text-light: #454545FF;
   --pgn-color-btn-text-outline-light: var(--pgn-color-btn-bg-light);
   --pgn-color-btn-bg-secondary: var(--pgn-color-secondary-600);

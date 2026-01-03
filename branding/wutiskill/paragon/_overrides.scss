@@ -7,7 +7,7 @@
   color: theme-color("gray");
   opacity: 1;
 
-  @include hover {
+  &:hover {
     color: theme-color("gray");
   }
 }
@@ -388,4 +388,14 @@ a.inline-link {
 }
 
 
+@import "./header";
+@import "./footer";
 @import "./login";
+@import "./progress";
+@import "./tour";
+@import "./learning";
+@import "./discussion";
+@import "./account";
+@import "./profile";
+@import "./dates";
+@import "./extras";

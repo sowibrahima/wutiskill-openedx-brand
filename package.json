@@ -16,5 +16,8 @@
   },
   "devDependencies": {
     "@openedx/paragon": "^23.18.2"
+  },
+  "dependencies": {
+    "@edx/edx-bootstrap": "^2.6.0"
   }
 }

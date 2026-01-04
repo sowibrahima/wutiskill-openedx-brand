@@ -629,7 +629,7 @@
   --pgn-color-brand-700: #A33508FF;
   --pgn-color-brand-800: #8B2F0BFF;
   --pgn-color-brand-900: #73290CFF;
-  --pgn-color-brand-base: #FF7B08FF;
+  --pgn-color-brand-base: #155FA1FF;
   --pgn-color-success-100: #F2FAF7FF;
   --pgn-color-success-200: #BBE6D7FF;
   --pgn-color-success-300: #30A171FF;
@@ -1177,7 +1177,7 @@
   --pgn-color-action-default-brand-700: #722506FF;
   --pgn-color-action-default-brand-800: #5C1F07FF;
   --pgn-color-action-default-brand-900: #451907FF;
-  --pgn-color-action-default-brand-base: #D46300FF;
+  --pgn-color-action-default-brand-base: #0F4474FF;
   --pgn-color-action-default-success-100: #CDECE0FF;
   --pgn-color-action-default-success-200: #96D8C1FF;
   --pgn-color-action-default-success-300: #247A55FF;
@@ -1795,7 +1795,7 @@
   --pgn-color-action-default-gray-500: #575757FF;
   --pgn-color-action-default-primary-500: #167D58FF;
   --pgn-color-action-default-secondary-base: #2B2B2BFF;
-  --pgn-color-action-default-brand-500: #D46300FF;
+  --pgn-color-action-default-brand-500: #0F4474FF;
   --pgn-color-action-default-success-500: #084F31FF;
   --pgn-color-action-default-info-500: #00425AFF;
   --pgn-color-action-default-warning-500: #A38B00FF;
@@ -1834,9 +1834,9 @@
   --pgn-color-badge-focus-secondary: var(--pgn-color-badge-text-secondary);
   --pgn-color-badge-focus-bg-secondary: #2B2B2BFF;
   --pgn-color-badge-focus-box-shadow-secondary: #4545450D;
-  --pgn-color-btn-text-brand: #353535FF;
+  --pgn-color-btn-text-brand: #FFFFFFFF;
   --pgn-color-btn-text-outline-brand: var(--pgn-color-btn-bg-brand);
-  --pgn-color-btn-text-inverse-brand: #353535FF;
+  --pgn-color-btn-text-inverse-brand: #FFFFFFFF;
   --pgn-color-btn-text-light: #454545FF;
   --pgn-color-btn-text-outline-light: var(--pgn-color-btn-bg-light);
   --pgn-color-btn-bg-secondary: var(--pgn-color-secondary-600);
@@ -2008,9 +2008,9 @@
   --pgn-color-link-muted-hover: #126748FF;
   --pgn-color-link-muted-inline-decoration: #1EA8764D;
   --pgn-color-link-muted-inline-hover-base: #126748FF;
-  --pgn-color-link-brand-hover: #BA5700FF;
-  --pgn-color-link-brand-inline-decoration: #FF7B084D;
-  --pgn-color-link-brand-inline-hover-base: #BA5700FF;
+  --pgn-color-link-brand-hover: #0C375DFF;
+  --pgn-color-link-brand-inline-decoration: #155FA14D;
+  --pgn-color-link-brand-inline-hover-base: #0C375DFF;
   --pgn-color-list-group-active-border: var(--pgn-color-list-group-active-bg);
   --pgn-color-action-default-secondary-100: #DBDBDBFF;
   --pgn-color-action-default-secondary-200: #B8B8B8FF;
@@ -2075,7 +2075,7 @@
   --pgn-color-form-control-file-button-base: var(--pgn-color-form-control-file-base);
   --pgn-color-link-inline-hover-decoration: #003041FF;
   --pgn-color-link-muted-inline-hover-decoration: #126748FF;
-  --pgn-color-link-brand-inline-hover-decoration: #BA5700FF;
+  --pgn-color-link-brand-inline-hover-decoration: #0C375DFF;
   --pgn-color-btn-active-text-secondary: #FFFFFFFF;
   --pgn-color-btn-active-text-outline-secondary: #FFFFFFFF;
   --pgn-color-btn-active-text-inverse-outline-secondary: #454545FF;

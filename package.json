@@ -12,7 +12,6 @@
     "build-scss:tenant1": "paragon build-scss --corePath ./branding/tenant1/paragon/core.scss --themesPath ./branding/tenant1/paragon/css/themes --outDir ./dist/tenant1 --defaultThemeVariants light",
     "build:tenant1": "npm run build-tokens:tenant1 && npm run build-scss:tenant1",
     "build": "node ./scripts/build-all.js",
-    "prepare": "npm run build",
     "paragon:help": "paragon help"
   },
   "devDependencies": {

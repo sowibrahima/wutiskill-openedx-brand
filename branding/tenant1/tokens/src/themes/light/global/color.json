@@ -134,7 +134,7 @@
     },
     "brand": {
       "base": {
-        "$value": "#ff7b08",
+        "$value": "#155fa1",
         "source": "$brand",
         "$description": "Basic brand color."
       },

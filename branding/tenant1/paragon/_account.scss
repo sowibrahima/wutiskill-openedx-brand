@@ -253,6 +253,13 @@
                         background: #fff !important;
                         border-color: #D1D5DB !important;
                         color: #374151;
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            background: #fff !important;
+                            color: #374151 !important;
+                            border-color: #D1D5DB !important;
+                        }
                     }
                 }
             }

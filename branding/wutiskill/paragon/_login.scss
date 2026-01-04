@@ -1,6 +1,11 @@
 // Authn login layout overrides
 // Uses Paragon design tokens (CSS variables) for spacing, radii, shadows, and colors.
 
+// Hide company logo
+.company-logo {
+  display: none;
+}
+
 .layout {
   min-height: 100vh;
   background: linear-gradient(

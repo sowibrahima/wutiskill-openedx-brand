@@ -19,7 +19,7 @@ function run(command) {
 function buildBrand(brand) {
   const brandPath = path.join(brandingDir, brand);
   const tokensSrc = path.join(brandPath, 'tokens', 'src');
-  const cssBuildDir = path.join(brandPath, 'paragon', 'build');
+  const cssBuildDir = path.join(brandPath, 'paragon', 'css');
   const corePath = path.join(brandPath, 'paragon', 'core.scss');
   const themesPath = path.join(cssBuildDir, 'themes');
   const outDir = path.join(repoRoot, 'dist', brand);
@@ -29,7 +29,7 @@ function buildBrand(brand) {
 
   console.log(`\n=== Building tokens for ${brand} ===`);
   run(
-    `paragon build-tokens --source ${tokensSrc} --build-dir ${cssBuildDir} --source-tokens-only`
+    `paragon build-tokens --source ${tokensSrc} --build-dir ${cssBuildDir}`
   );
 
   console.log(`\n=== Building scss for ${brand} ===`);

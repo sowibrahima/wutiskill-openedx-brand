@@ -310,18 +310,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, .h1 {
-  line-height: calc((44 / 16) * 1rem);
-  letter-spacing: -2%;
-
-  @media (max-width: map-get($grid-breakpoints, "sm")) {
-    line-height: calc((40 / 16) * 1rem);
-  }
-  .mobile-type & {
-    line-height: calc((40 / 16) * 1rem);
-  }
-}
-
 h2, .h2 {
   line-height: calc((36 / 16) * 1rem);
 }

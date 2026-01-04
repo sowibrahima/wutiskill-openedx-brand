@@ -69,3 +69,10 @@ Upload `dist/<tenant>/` to your CDN and configure via `MFE_CONFIG`:
 3. Update logos and assets
 4. Add build scripts to `package.json`
 5. Run `make build`
+
+
+
+BANNER_IMAGE_EXTRA_SMALL: http://cdn.jsdelivr.net/gh/sowibrahima/ws-theme@main/ws_theme/templates/ws_theme/lms/static/images/125683.jpg
+BANNER_IMAGE_LARGE: https://github.com/sowibrahima/ws-theme/blob/main/ws_theme/templates/ws_theme/lms/static/images/125683_large.jpg
+BANNER_IMAGE_MEDIUM: https://github.com/sowibrahima/ws-theme/blob/main/ws_theme/templates/ws_theme/lms/static/images/125683_med.jpg
+BANNER_IMAGE_SMALL: https://github.com/sowibrahima/ws-theme/blob/main/ws_theme/templates/ws_theme/lms/static/images/125683.jpg

@@ -315,13 +315,13 @@ $link-hover-decoration: var(--pgn-typography-link-decoration-hover) !default;
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px
+// ) !default;
 
 // @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 // @include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
@@ -1239,6 +1239,12 @@ $thumbnail-box-shadow: var(--pgn-elevation-image-thumbnail-box-shadow) !default;
 // Printing
 
 // $print-page-size:                   a3 !default;
-// $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+// $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;\
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+// FROM https://github.com/open-craft/edx-simple-theme/blob/master/paragon/_variables.scss
+// Set default colors in case they aren't set on the parent file
+$main-color: var(--pgn-color-main) !default;
+$header-bg: var(--pgn-color-header-bg) !default;
+$footer-bg: var(--pgn-color-footer-bg) !default;
+
+$header-btn-bg: $header-bg !default;

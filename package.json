@@ -5,13 +5,14 @@
   "author": "WutiSkill",
   "license": "UNLICENSED",
   "scripts": {
-    "build-tokens:wutiskill": "paragon build-tokens --source ./branding/wutiskill/tokens/src --build-dir ./branding/wutiskill/paragon/build --source-tokens-only",
-    "build-scss:wutiskill": "paragon build-scss --corePath ./branding/wutiskill/paragon/core.scss --themesPath ./branding/wutiskill/paragon/build/themes --outDir ./dist/wutiskill --defaultThemeVariants light",
+    "build-tokens:wutiskill": "paragon build-tokens --source ./branding/wutiskill/tokens/src --build-dir ./branding/wutiskill/paragon/css",
+    "build-scss:wutiskill": "paragon build-scss --corePath ./branding/wutiskill/paragon/core.scss --themesPath ./branding/wutiskill/paragon/css/themes --outDir ./dist/wutiskill --defaultThemeVariants light",
     "build:wutiskill": "npm run build-tokens:wutiskill && npm run build-scss:wutiskill",
-    "build-tokens:tenant1": "paragon build-tokens --source ./branding/tenant1/tokens/src --build-dir ./branding/tenant1/paragon/build --source-tokens-only",
-    "build-scss:tenant1": "paragon build-scss --corePath ./branding/tenant1/paragon/core.scss --themesPath ./branding/tenant1/paragon/build/themes --outDir ./dist/tenant1 --defaultThemeVariants light",
+    "build-tokens:tenant1": "paragon build-tokens --source ./branding/tenant1/tokens/src --build-dir ./branding/tenant1/paragon/css",
+    "build-scss:tenant1": "paragon build-scss --corePath ./branding/tenant1/paragon/core.scss --themesPath ./branding/tenant1/paragon/css/themes --outDir ./dist/tenant1 --defaultThemeVariants light",
     "build:tenant1": "npm run build-tokens:tenant1 && npm run build-scss:tenant1",
     "build": "node ./scripts/build-all.js",
+    "prepare": "npm run build",
     "paragon:help": "paragon help"
   },
   "devDependencies": {

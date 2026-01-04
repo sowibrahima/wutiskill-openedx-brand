@@ -310,18 +310,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, .h1 {
-  line-height: calc((44 / 16) * 1rem);
-  letter-spacing: -2%;
-
-  @media (max-width: map-get($grid-breakpoints, "sm")) {
-    line-height: calc((40 / 16) * 1rem);
-  }
-  .mobile-type & {
-    line-height: calc((40 / 16) * 1rem);
-  }
-}
-
 h2, .h2 {
   line-height: calc((36 / 16) * 1rem);
 }
@@ -385,6 +373,191 @@ a.inline-link {
 }
 .progress-bar {
   background-color: $progress-bar-bg;
+}
+
+
+@mixin btn-styles($bg, $color, $border-color, $hover-bg, $hover-color, $hover-border-color) {
+  background: $bg !important;
+  color: $color !important;
+  border: var(--pgn-size-btn-border-width) solid $border-color !important;
+
+  span {
+    color: $color !important;
+  }
+
+  &:hover {
+    background-color: $hover-bg !important;
+    color: $hover-color !important;
+    border-color: $hover-border-color !important;
+
+    span {
+      color: $hover-color !important;
+    }
+  }
+}
+
+// Set the default color of links
+a:not(.btn, .help-link),
+a:not(.btn):hover,
+a:not(.btn):focus,
+a:visited:not(.btn):hover,
+a:visited:not(.btn):focus {
+  color: var(--pgn-color-link-base);
+}
+
+header.learning-header,
+header.learner-variant-header,
+header.site-header-desktop {
+  // Set the header background color
+  background-color: var(--pgn-color-header-bg);
+
+  // Set the header for desktop
+  &.site-header-desktop {
+    background-color: var(--pgn-color-header-bg);
+  }
+
+  // Set the top and bottom border of the header
+  border-top: var(--pgn-size-header-border-top-width) solid var(--pgn-color-header-border-top);
+  border-bottom: var(--pgn-size-header-border-bottom-width) solid var(--pgn-color-header-border-bottom);
+  // The default height is 3.75rem, to that we add the additional border size, otherwise
+  // it breaks the UI.
+  height: calc(3.75rem + var(--pgn-size-header-border-top-width) + var(--pgn-size-header-border-bottom-width));
+  // Set the color of text in the header - course about page.
+  span {
+    color: var(--pgn-color-header-nav-text);
+  }
+
+  .nav-links {
+    // Set the color of the links in the dashboard
+    .main .nav-tab a,
+    .secondary .nav-item a,
+    .secondary .nav-item a span,
+    .toggle-user-dropdown span {
+      color: var(--pgn-color-header-nav-link) !important;
+    }
+
+    // Set the bottom border color of the links in the dashboard like 'Courses', 'Programs', 'Profile' etc.
+    .main .nav-tab a {
+      &.active {
+        border-bottom-color: var(--pgn-color-header-nav-item-border-bottom-color) !important;
+        border-bottom-style: solid !important;
+      }
+    }
+
+    .main .nav-tab a {
+      &:not(.active):hover {
+        border-bottom-color: var(--pgn-color-header-nav-item-border-bottom-hover-color) !important;
+        border-bottom-style: solid !important;
+      }
+    }
+
+    // Customize the color of the links in the user dropdown menu
+    nav.secondary-menu-container .dropdown-menu .dropdown-item a {
+      color: var(--pgn-color-header-nav-user-dropdown-menu-item-color) !important;
+    }
+  }
+
+  .main .nav-tab a,
+  .secondary .nav-item a:not(.btn):not(.help-link),
+  .secondary .nav-item .toggle-user-dropdown {
+    // Set the color of the dropdown arrow of the user dropdowm menu
+    color: var(--pgn-color-link-base) !important;
+  }
+
+  // Customize the sign-in button on the home page header
+  a.sign-in-btn {
+    @include btn-styles(
+      var(--pgn-color-sign-in-btn-bg),
+      var(--pgn-color-sign-in-btn-text),
+      var(--pgn-color-sign-in-btn-border),
+      var(--pgn-color-sign-in-btn-hover-bg),
+      var(--pgn-color-sign-in-btn-hover-text),
+      var(--pgn-color-sign-in-btn-hover-border)
+    );
+  }
+  // Customize the register button on the home page header
+  a.register-btn {
+    @include btn-styles(
+      var(--pgn-color-register-btn-bg),
+      var(--pgn-color-register-btn-text),
+      var(--pgn-color-register-btn-border),
+      var(--pgn-color-register-btn-hover-bg),
+      var(--pgn-color-register-btn-hover-text),
+      var(--pgn-color-register-btn-hover-border)
+    );
+  }
+
+  // Set the color of nav items in the learner dashboard MFE
+  .btn-inverse-primary,
+  .btn-icon-inverse-primary,
+  .btn-light,
+  .show > .btn-light.dropdown-toggle {
+    color: var(--pgn-color-link-base) !important;
+    background-color: $header-btn-bg !important;
+    border-radius: 0 !important;
+  }
+
+  // Remove border white color from user dropdown in header
+  .btn-avatar {
+    border-width: 0 !important;
+  }
+}
+
+.learner-variant-header {
+  .course-link:hover {
+    border-bottom: inherit !important;
+  }
+}
+
+footer.footer {
+  background: var(--pgn-color-footer-bg); // Footer color
+  background-color: var(--pgn-color-footer-bg) !important; // Footer color
+  box-shadow: none !important;
+
+  // Customize the footer border
+  border-top: var(--pgn-size-footer-border-top-width) solid var(--pgn-color-footer-border-bottom) !important;
+  border-bottom: var(--pgn-size-footer-border-bottom-width) solid var(--pgn-color-footer-border-bottom);
+
+  color: var(--pgn-color-footer-text) !important; // Footer text color
+
+  a {
+    color: var(--pgn-color-footer-link) !important; // Link color
+  }
+}
+
+// Set color for course nav bar in Learning MFE
+.course-tabs-navigation a.nav-link {
+  &:focus,
+  &:hover,
+  &.active {
+    color: var(--pgn-color-course-nav-menu-text);
+  }
+
+  &.active {
+    border-bottom-color: var(--pgn-color-course-nav-menu-border-bottom);
+  }
+}
+
+// Discussions mfe overwrites learning header color to white
+.learning-header {
+  background-color: var(--pgn-color-header-bg) !important;
+}
+
+.learning-header a {
+  color: var(--pgn-color-link-base) !important;
+
+  &:focus,
+  &:hover,
+  &.active {
+    color: var(--pgn-color-link-base) !important;
+  }
+}
+
+// Header navigation colors in the learner dashboard MFE on mobile
+.nav-small-menu {
+  .btn-inverse-primary {
+    color: var(--pgn-color-link-base);
+  }
 }
 
 

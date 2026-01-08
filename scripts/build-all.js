@@ -25,6 +25,10 @@ function buildBrand(brand) {
   const outDir = path.join(repoRoot, 'dist', brand);
   const rootParagonDir = path.join(repoRoot, 'paragon');
 
+  // Source images from root paragon/images
+  const rootImagesDir = path.join(repoRoot, 'paragon', 'images');
+  const outImagesDir = path.join(outDir, 'images');
+
   fs.mkdirSync(outDir, { recursive: true });
 
   console.log(`\n=== Building tokens for ${brand} ===`);
@@ -36,6 +40,14 @@ function buildBrand(brand) {
   run(
     `paragon build-scss --corePath ${corePath} --themesPath ${themesPath} --outDir ${outDir} --defaultThemeVariants light`
   );
+
+  // Copy images from paragon/images to dist/brand/images
+  if (fs.existsSync(rootImagesDir)) {
+    console.log(`\n=== Copying images for ${brand} ===`);
+    fs.mkdirSync(outImagesDir, { recursive: true });
+    fs.cpSync(rootImagesDir, outImagesDir, { recursive: true });
+    console.log(`Copied images to ${outImagesDir}`);
+  }
 
   // Expose the brand's paragon folder at the repo root (for package consumers expecting /paragon/*)
   // We publish the primary brand (wutiskill) to the root paragon directory.

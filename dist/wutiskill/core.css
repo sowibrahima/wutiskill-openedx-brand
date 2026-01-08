@@ -1519,7 +1519,7 @@ a.inline-link:hover {
   }
 }
 
-#main {
+#root #main-content {
   min-height: 75vh;
 }
 
@@ -2091,4 +2091,8 @@ div[role=heading].h2 + .list-unstyled.m-0.mt-4.pt-2 li .small.mb-2 {
 
 .theme-toggle-button .toggle-switch .switch .slider.round::before {
   border-radius: 50%;
+}
+
+#dashboard-container {
+  min-height: 75vh;
 }

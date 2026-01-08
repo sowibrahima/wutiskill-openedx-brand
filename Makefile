@@ -1,4 +1,4 @@
-.PHONY: build build-wutiskill build-tenant1 clean
+.PHONY: build build-wutiskill build-10000codeurs clean
 
 build: clean
 	npm run build
@@ -8,10 +8,10 @@ build-wutiskill:
 	mkdir -p dist/wutiskill
 	npm run build:wutiskill
 
-build-tenant1:
-	rm -rf dist/tenant1
-	mkdir -p dist/tenant1
-	npm run build:tenant1
+build-10000codeurs:
+	rm -rf dist/10000codeurs
+	mkdir -p dist/10000codeurs
+	npm run build:10000codeurs
 
 clean:
 	rm -rf dist

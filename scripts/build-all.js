@@ -25,8 +25,8 @@ function buildBrand(brand) {
   const outDir = path.join(repoRoot, 'dist', brand);
   const rootParagonDir = path.join(repoRoot, 'paragon');
 
-  // Source images from root paragon/images
-  const rootImagesDir = path.join(repoRoot, 'paragon', 'images');
+  // Source images from brand-specific paragon/images
+  const brandImagesDir = path.join(brandPath, 'paragon', 'images');
   const outImagesDir = path.join(outDir, 'images');
 
   fs.mkdirSync(outDir, { recursive: true });
@@ -41,12 +41,12 @@ function buildBrand(brand) {
     `paragon build-scss --corePath ${corePath} --themesPath ${themesPath} --outDir ${outDir} --defaultThemeVariants light`
   );
 
-  // Copy images from paragon/images to dist/brand/images
-  if (fs.existsSync(rootImagesDir)) {
+  // Copy images from branding/brand/paragon/images to dist/brand/images
+  if (fs.existsSync(brandImagesDir)) {
     console.log(`\n=== Copying images for ${brand} ===`);
     fs.mkdirSync(outImagesDir, { recursive: true });
-    fs.cpSync(rootImagesDir, outImagesDir, { recursive: true });
-    console.log(`Copied images to ${outImagesDir}`);
+    fs.cpSync(brandImagesDir, outImagesDir, { recursive: true });
+    console.log(`Copied images from ${brandImagesDir} to ${outImagesDir}`);
   }
 
   // Expose the brand's paragon folder at the repo root (for package consumers expecting /paragon/*)
